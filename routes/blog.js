@@ -4,4 +4,8 @@ const { time } = require ('../controllers/blog')
 
 router.get('/blogs', time)
 
+router.get('/post', (req, res) => {
+    console.log('hello post route')
+})
+
 module.exports = router
